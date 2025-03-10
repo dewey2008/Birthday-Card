@@ -128,7 +128,7 @@ body {
   margin: 2rem;
   position: absolute;
   top: 38%;
-  left: -2%;
+  left: -5%;
   transform: translate(-50%, -50%); /* Centers it */
 }
 .card img {
@@ -161,7 +161,7 @@ body {
 .box {
   display: none; /* Initially hidden */
   height: 18rem;
-  width: 12rem;
+  width: 10rem;
   background-color: white;
   border: solid 2px #34495e;
   border-radius: 1.25rem;
@@ -261,7 +261,7 @@ body {
   height: 250px;
   display: block;
   margin-top: 21px; /* Moves it 50px up */
-  margin-left: 21px;
+  margin-left: 16px;
   animation: shake 2s ease-in-out infinite; /* Slowed down */
 }
 
