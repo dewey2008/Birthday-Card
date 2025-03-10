@@ -124,11 +124,11 @@ body {
   background-color: white;
   border: solid 2px #34495e;
   border-radius: 1.25rem;
-  padding: 4rem 4rem 4rem 1rem;
+  padding: 2rem 2rem 2rem 1rem;
   margin: 2rem;
   position: absolute;
   top: 38%;
-  left: -3%;
+  left: -5%;
   transform: translate(-50%, -50%); /* Centers it */
 }
 .card img {
