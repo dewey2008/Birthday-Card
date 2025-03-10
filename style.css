@@ -128,7 +128,7 @@ body {
   margin: 2rem;
   position: absolute;
   top: 38%;
-  left: -2%;
+  left: -3%;
   transform: translate(-50%, -50%); /* Centers it */
 }
 .card img {
