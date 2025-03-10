@@ -161,7 +161,7 @@ body {
 .box {
   display: none; /* Initially hidden */
   height: 18rem;
-  width: 12rem;
+  width: 10rem;
   background-color: white;
   border: solid 2px #34495e;
   border-radius: 1.25rem;
