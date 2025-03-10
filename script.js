@@ -50,8 +50,9 @@ let showBalloons = () => {
     for (let i = 0; i < balloonCount; i++) {
       createBalloon();
     }
-  }, 2000);
+  }, 4000); // Increased the interval to 4000ms (4 seconds)
 };
+
 
 // Gift click event
 gift.onclick = () => {
