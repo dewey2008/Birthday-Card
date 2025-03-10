@@ -284,44 +284,37 @@ body {
   text-align: center;
 }
 
-#balloons {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none; /* Allows clicks to pass through */
-  display: none; /* Shown when the gift is clicked */
-  z-index: -1; /* Keeps balloons behind other elements */
-}
-/* Balloon Image */
-.balloon {
-  position: absolute;
-  bottom: -50px; /* Start below the screen */
-  width: 70px;  /* Adjust to your image size */
-  height: 100px;  /* Adjust to your image size */
-  background-size: cover;
-}
-
-/* Balloon Wrapper (moves the balloon image together) */
+/* Balloon wrapper for positioning */
 .balloon-wrapper {
   position: absolute;
-  bottom: -100px; /* Start below the screen */
-  animation: floatUp 10s ease-in forwards;
-  display: flex;
-  flex-direction: column; /* Align balloon image */
-  align-items: center;
-  animation: floatUp 10s ease-in forwards; /* Move everything together */
+  animation: float 10s linear infinite;
 }
 
-/* Floating animation for the balloons */
-@keyframes floatUp {
+/* Balloon image */
+.balloon {
+  width: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Pop animation */
+.balloon-wrapper.pop .balloon {
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Floating animation */
+@keyframes float {
   0% {
-    transform: translateY(0);
+    bottom: -100px;
+    opacity: 0.8;
   }
   100% {
-    transform: translateY(-100vh); /* Move the entire wrapper (balloon image) upwards */
+    bottom: 100vh;
+    opacity: 0;
   }
 }
+
 
 /* Dewey 2025 */
